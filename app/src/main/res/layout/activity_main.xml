@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/DOB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/age"
+        app:layout_constraintEnd_toEndOf="@+id/DOB"
+        app:layout_constraintStart_toStartOf="@+id/DOB"
+        app:layout_constraintTop_toBottomOf="@+id/DOB" />
+
+    <TextView
+        android:id="@+id/basicSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/basicSaving"
+        app:layout_constraintEnd_toEndOf="@+id/age"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/investAmt"
+        android:layout_width="135dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/investAmt"
+        app:layout_constraintEnd_toEndOf="@+id/basicSaving"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="@+id/basicSaving"
+        app:layout_constraintTop_toBottomOf="@+id/basicSaving" />
+
+    
+    <TextView
+        android:id="@+id/ageInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/age"
+        app:layout_constraintEnd_toEndOf="@+id/DOBInput"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/DOBInput"
+        app:layout_constraintTop_toBottomOf="@+id/DOBInput" />
+
+    <TextView
+        android:id="@+id/basicSavingInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/basicSaving"
+        app:layout_constraintEnd_toEndOf="@+id/ageInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ageInput"
+        app:layout_constraintTop_toBottomOf="@+id/ageInput" />
+
+    <TextView
+        android:id="@+id/investAmtInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/investAmt"
+        app:layout_constraintEnd_toEndOf="@+id/basicSavingInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/basicSavingInput"
+        app:layout_constraintTop_toBottomOf="@+id/basicSavingInput" />
+
+    <EditText
+        android:id="@+id/DOBInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/DOB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
